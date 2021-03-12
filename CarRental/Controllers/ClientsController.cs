@@ -7,23 +7,25 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CarRental.DAL;
 using CarRental.Models;
+using CarRental.DAL.DBO;
+using CarRental.DAL.Repositories;
 
 namespace CarRental.Controllers
 {
     public class ClientsController : Controller
     {
-        private readonly CarRentalDbContext _context;
-
-        public ClientsController(CarRentalDbContext context)
+        private readonly IRepository<Client> _clientRepo;
+        private readonly IRepository<Car> _carRepo;
+        public ClientsController(IRepository<Client> clientRepo, IRepository<Car> carRepo)
         {
-            _context = context;
+            _clientRepo = clientRepo;
+            _carRepo = carRepo;
         }
 
         // GET: Clients
         public async Task<IActionResult> Index()
         {
-            var carRentalDbContext = _context.Clients.Include(c => c.Car);
-            return View(await carRentalDbContext.ToListAsync());
+           return View(await _clientRepo.GetAllAsync());
         }
 
         // GET: Clients/Details/5
@@ -34,9 +36,7 @@ namespace CarRental.Controllers
                 return NotFound();
             }
 
-            var client = await _context.Clients
-                .Include(c => c.Car)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var client = await _clientRepo.GetByIdAsync(id.Value);
             if (client == null)
             {
                 return NotFound();
@@ -46,9 +46,9 @@ namespace CarRental.Controllers
         }
 
         // GET: Clients/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["CarId"] = new SelectList(_context.Cars, "Id", "Name");
+            ViewData["CarId"] = new SelectList(await _carRepo.GetAllAsync(), "Id", "Name");
             return View();
         }
 
@@ -61,11 +61,10 @@ namespace CarRental.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(client);
-                await _context.SaveChangesAsync();
+                await _clientRepo.CreateAsync(client);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CarId"] = new SelectList(_context.Cars, "Id", "Name", client.CarId);
+            ViewData["CarId"] = new SelectList(await _carRepo.GetAllAsync(), "Id", "Name", client.CarId);
             return View(client);
         }
 
@@ -77,12 +76,12 @@ namespace CarRental.Controllers
                 return NotFound();
             }
 
-            var client = await _context.Clients.FindAsync(id);
+            var client = await _clientRepo.GetByIdAsync(id.Value);
             if (client == null)
             {
                 return NotFound();
             }
-            ViewData["CarId"] = new SelectList(_context.Cars, "Id", "Name", client.CarId);
+            ViewData["CarId"] = new SelectList(await _carRepo.GetAllAsync(), "Id", "Name", client.CarId);
             return View(client);
         }
 
@@ -102,12 +101,11 @@ namespace CarRental.Controllers
             {
                 try
                 {
-                    _context.Update(client);
-                    await _context.SaveChangesAsync();
+                    await _clientRepo.UpdateAsync(client);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClientExists(client.Id))
+                    if (_clientRepo.Exists(client.Id))
                     {
                         return NotFound();
                     }
@@ -118,7 +116,7 @@ namespace CarRental.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CarId"] = new SelectList(_context.Cars, "Id", "Name", client.CarId);
+            ViewData["CarId"] = new SelectList(await _carRepo.GetAllAsync(), "Id", "Name", client.CarId);
             return View(client);
         }
 
@@ -130,9 +128,7 @@ namespace CarRental.Controllers
                 return NotFound();
             }
 
-            var client = await _context.Clients
-                .Include(c => c.Car)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var client = await _clientRepo.GetByIdAsync(id.Value);
             if (client == null)
             {
                 return NotFound();
@@ -146,15 +142,9 @@ namespace CarRental.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var client = await _context.Clients.FindAsync(id);
-            _context.Clients.Remove(client);
-            await _context.SaveChangesAsync();
+            await _clientRepo.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ClientExists(int id)
-        {
-            return _context.Clients.Any(e => e.Id == id);
-        }
     }
 }

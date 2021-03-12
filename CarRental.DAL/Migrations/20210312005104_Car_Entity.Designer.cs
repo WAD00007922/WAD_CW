@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace CarRental.Migrations
+namespace CarRental.DAL.Migrations
 {
     [DbContext(typeof(CarRentalDbContext))]
-    [Migration("20210311235813_Client_Driving_License_No_Added")]
-    partial class Client_Driving_License_No_Added
+    [Migration("20210312005104_Car_Entity")]
+    partial class Car_Entity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,21 @@ namespace CarRental.Migrations
                 .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("CarRental.DAL.DBO.Car", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Type");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cars");
+                });
 
             modelBuilder.Entity("CarRental.Models.Client", b =>
                 {
@@ -31,6 +46,8 @@ namespace CarRental.Migrations
                         .IsRequired();
 
                     b.Property<string>("AddressLine2");
+
+                    b.Property<int?>("CarId");
 
                     b.Property<DateTime>("DateOfBirth");
 
@@ -50,7 +67,16 @@ namespace CarRental.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CarId");
+
                     b.ToTable("Clients");
+                });
+
+            modelBuilder.Entity("CarRental.Models.Client", b =>
+                {
+                    b.HasOne("CarRental.Models.Car", "Car")
+                        .WithMany("Clients")
+                        .HasForeignKey("CarId");
                 });
 #pragma warning restore 612, 618
         }

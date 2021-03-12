@@ -4,16 +4,14 @@ using CarRental.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace CarRental.Migrations
+namespace CarRental.DAL.Migrations
 {
     [DbContext(typeof(CarRentalDbContext))]
-    [Migration("20210312005104_Car_Entity")]
-    partial class Car_Entity
+    partial class CarRentalDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,7 +19,7 @@ namespace CarRental.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CarRental.Models.Car", b =>
+            modelBuilder.Entity("CarRental.DAL.DBO.Car", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -36,7 +34,7 @@ namespace CarRental.Migrations
                     b.ToTable("Cars");
                 });
 
-            modelBuilder.Entity("CarRental.Models.Client", b =>
+            modelBuilder.Entity("CarRental.DAL.DBO.Client", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,7 +70,7 @@ namespace CarRental.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("CarRental.Models.Client", b =>
+            modelBuilder.Entity("CarRental.DAL.DBO.Client", b =>
                 {
                     b.HasOne("CarRental.Models.Car", "Car")
                         .WithMany("Clients")

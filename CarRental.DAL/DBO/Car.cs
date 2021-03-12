@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CarRental.DAL.DBO;
 
-namespace CarRental.Models
+namespace CarRental.DAL.DBO
 {
     public class Car
     {

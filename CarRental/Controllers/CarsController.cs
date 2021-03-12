@@ -1,28 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using CarRental.DAL;
-using CarRental.Models;
+using CarRental.DAL.DBO;
+using CarRental.DAL.Repositories;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarRental.Controllers
 {
     public class CarsController : Controller
     {
-        private readonly CarRentalDbContext _context;
+        private readonly IRepository<Car> _carRepo;
 
-        public CarsController(CarRentalDbContext context)
+        public CarsController(IRepository<Car> carRepo)
         {
-            _context = context;
+            _carRepo = carRepo;
         }
 
         // GET: Cars
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cars.ToListAsync());
+            return View(await _carRepo.GetAllAsync());
         }
 
         // GET: Cars/Details/5
@@ -33,8 +34,7 @@ namespace CarRental.Controllers
                 return NotFound();
             }
 
-            var car = await _context.Cars
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var car = await _carRepo.GetByIdAsync(id.Value) ;
             if (car == null)
             {
                 return NotFound();
@@ -58,8 +58,8 @@ namespace CarRental.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(car);
-                await _context.SaveChangesAsync();
+                
+                await _carRepo.CreateAsync(car);
                 return RedirectToAction(nameof(Index));
             }
             return View(car);
@@ -73,7 +73,7 @@ namespace CarRental.Controllers
                 return NotFound();
             }
 
-            var car = await _context.Cars.FindAsync(id);
+            var car = await _carRepo.GetByIdAsync(id.Value);
             if (car == null)
             {
                 return NotFound();
@@ -97,12 +97,11 @@ namespace CarRental.Controllers
             {
                 try
                 {
-                    _context.Update(car);
-                    await _context.SaveChangesAsync();
+                    await _carRepo.UpdateAsync(car); 
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CarExists(car.Id))
+                    if (!_carRepo.Exists(car.Id))
                     {
                         return NotFound();
                     }
@@ -124,8 +123,7 @@ namespace CarRental.Controllers
                 return NotFound();
             }
 
-            var car = await _context.Cars
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var car = await _carRepo.GetByIdAsync(id.Value);
             if (car == null)
             {
                 return NotFound();
@@ -139,15 +137,10 @@ namespace CarRental.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var car = await _context.Cars.FindAsync(id);
-            _context.Cars.Remove(car);
-            await _context.SaveChangesAsync();
+            await _carRepo.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CarExists(int id)
-        {
-            return _context.Cars.Any(e => e.Id == id);
-        }
+        
     }
 }

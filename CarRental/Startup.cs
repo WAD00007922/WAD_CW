@@ -1,4 +1,6 @@
 ﻿using CarRental.DAL;
+using CarRental.DAL.DBO;
+using CarRental.DAL.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -32,7 +34,9 @@ namespace CarRental
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            
+            services.AddScoped<IRepository<Car>, CarRepo>();
+            services.AddScoped<IRepository<Client>, ClientRepo>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<CarRentalDbContext>(
                 options => options.UseSqlServer(

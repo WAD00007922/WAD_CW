@@ -1,0 +1,8 @@
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.deps.json
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfoInputs.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfo.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csproj.CoreCompileInputs.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.pdb

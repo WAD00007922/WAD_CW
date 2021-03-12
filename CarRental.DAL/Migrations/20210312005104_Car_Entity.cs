@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CarRental.Migrations
+namespace CarRental.DAL.Migrations
 {
     public partial class Car_Entity : Migration
     {
