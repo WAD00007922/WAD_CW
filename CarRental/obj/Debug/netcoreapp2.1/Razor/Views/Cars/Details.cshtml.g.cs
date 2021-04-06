@@ -104,7 +104,7 @@ using CarRental.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(524, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d48fd692fd7437b83cd1fcbc8d2ec0d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb3443a4721d4544a3f430f516e7c439", async() => {
                 BeginContext(570, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -139,7 +139,7 @@ using CarRental.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(586, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54b5be8cd6e84f39bf473b768b49e7f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05ffd37d5eb044e4b14f1c64ba6fdaf1", async() => {
                 BeginContext(608, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();
