@@ -24,6 +24,16 @@
                     templateUrl: 'pages/clients.html',
                     controller: 'ClientsController'
                 })
+                .when('/addClient',
+                {
+                    templateUrl: 'pages/addEditClient.html',
+                    controller: 'AddClientController'
+                })
+                .when('/editClient/:clientId',
+                {
+                    templateUrl: 'pages/addEditClient.html',
+                    controller: 'EditClientController'
+                })
                 .when('/cars',
                 {
                     templateUrl: 'pages/cars.html',
@@ -53,8 +63,14 @@
                 .then(function (response) {          //Get request for the method//
                     $scope.clients = response.data;
                 });
+             $scope.Delete = function (client) {
+                $http.delete("@Url.Action("GetClients", "Clients")/" + client.id).then(function (response){
+                    var index = $scope.clients.indexOf(client);
+                    $scope.clients.splice(index, 1);
+                });
+            }
         }])
-        .controller('CarsController', ['$scope', '$http', function ($scope, $http) {
+            .controller('CarsController', ['$scope', '$http', function ($scope, $http) {
             $scope.cars = [];
             $http.get('@Url.Action("GetCars", "Cars")')
                 .then(function (response) {          //Get request for the method//
@@ -68,7 +84,33 @@
                 });
             }
         }])
-        .controller('AddCarController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+        .controller('AddClientController', ['$scope', '$http', '$location', function ($scope, $http, $location) { //for adding a new client//
+                $scope.client =
+                {
+                    id : 0,
+                    firstName : '',
+                    lastName : '',
+                    dateOfBirth : '',
+                    gender : '',
+                    email : '',
+                    phone : '',
+                    addressLine1 : '',
+                    addressLine2 : '',
+                    carId : '',
+                    drivingLicenseNo : '',
+
+            };
+
+            $scope.SaveClient = function()
+            {
+                $http.post('@Url.Action("PostClient", "Clients")', $scope.client)
+                    .then(function (response) {
+                        $location.path('/clients');
+                    })
+            }
+
+        }])
+        .controller('AddCarController', ['$scope', '$http', '$location', function ($scope, $http, $location) { //for adding a new car//
             $scope.car =
             {
                 id : 0,
@@ -86,7 +128,7 @@
             }
 
         }])
-        .controller('EditCarController', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
+        .controller('EditCarController', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) { //for editing car info //
             $scope.car =
             {
                 id : 0,
@@ -96,7 +138,7 @@
             };
 
             $http.get('@Url.Action("GetCars", "Cars")/' + $routeParams.carId)
-                .then(function (response) {          
+                .then(function (response) {
                     $scope.car = response.data;
                 });
 
@@ -105,6 +147,37 @@
                 $http.put('@Url.Action("GetCars", "Cars")/' + $routeParams.carId, $scope.car)
                     .then(function (response) {
                         $location.path('/cars');
+                    });
+            }
+
+        }])
+        .controller('EditClientController', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {//for editing client info //
+            $scope.client =
+            {
+                id : 0,
+                firstName : '',
+                lastName : '',
+                dateOfBirth : '',
+                gender : '',
+                email : '',
+                phone : '',
+                addressLine1 : '',
+                addressLine2 : '',
+                carId : '',
+                drivingLicenseNo : '',
+
+            };
+
+            $http.get('@Url.Action("GetClients", "Clients")/' + $routeParams.clientId)
+                .then(function (response) {
+                    $scope.client = response.data;
+                });
+
+            $scope.SaveClient = function()
+            {
+                $http.put('@Url.Action("GetClients", "Clients")/' + $routeParams.clientId, $scope.client)
+                    .then(function (response) {
+                        $location.path('/clients');
                     });
             }
 

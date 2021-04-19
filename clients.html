@@ -1,4 +1,5 @@
-﻿<table class="table">
+﻿<a href="#!/addClient">Register a new client</a>
+<table class="table">
     <tbody>
         <tr ng-repeat="client in clients">
             <td>{{client.firstName}}</td>
@@ -11,6 +12,12 @@
             <td>{{client.addressLine2}}</td>
             <td>{{client.carId}}</td>
             <td>{{client.drivingLicenseNo}}</td>
+            <td>
+                <a href="#!/editClient/{{client.id}}">Edit</a> 
+            </td>
+            <td>
+                <a ng-click="Delete(client)">Delete</a>
+            </td>
         </tr>
     </tbody>
 </table>

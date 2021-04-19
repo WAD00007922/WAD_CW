@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json.Converters;
 
 namespace CarRental
 {
@@ -36,11 +37,10 @@ namespace CarRental
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-           /* services.AddMvc().AddJsonOptions(options =>
-            {
-                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-            });*/
-           
+            // For enum JsonSerializer(Gender enum)
+            services.AddMvc()
+           .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+           .AddJsonOptions(op => { op.SerializerSettings.Converters.Add(new StringEnumConverter()); });
 
             services.AddScoped<IRepository<Car>, CarRepo>();
             services.AddScoped<IRepository<Client>, ClientRepo>();
