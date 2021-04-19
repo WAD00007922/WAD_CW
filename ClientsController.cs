@@ -7,44 +7,40 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CarRental.DAL;
 using CarRental.DAL.DBO;
+using CarRental.DAL.Repositories;
 
-namespace CarRental.Controllers
+namespace CarRental.Controllers //SRP and DRY applied for API Clients controller//
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ClientsController : ControllerBase
     {
-        private readonly CarRentalDbContext _context;
+        private readonly IRepository<Client> _clientRepo;
 
-        public ClientsController(CarRentalDbContext context)
+        public ClientsController(IRepository<Client> clientRepo)
         {
-            _context = context;
+            _clientRepo = clientRepo;
         }
 
         // GET: api/Clients
         [HttpGet]
-        public IEnumerable<Client> GetClients()
+        public async Task<ActionResult<IEnumerable<Client>>> GetClients()
         {
-            return _context.Clients;
+            return await _clientRepo.GetAllAsync();
         }
 
         // GET: api/Clients/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetClient([FromRoute] int id)
+        public async Task<ActionResult<Client>> GetClient(int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var client = await _context.Clients.FindAsync(id);
+            var client = await _clientRepo.GetByIdAsync(id);
 
             if (client == null)
             {
                 return NotFound();
             }
 
-            return Ok(client);
+            return client;
         }
 
         // PUT: api/Clients/5
@@ -56,16 +52,9 @@ namespace CarRental.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != client.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(client).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                await _clientRepo.UpdateAsync(client);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -84,43 +73,41 @@ namespace CarRental.Controllers
 
         // POST: api/Clients
         [HttpPost]
-        public async Task<IActionResult> PostClient([FromBody] Client client)
+        public async Task<ActionResult> PostClient(Client client)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.Clients.Add(client);
-            await _context.SaveChangesAsync();
+            await _clientRepo.CreateAsync(client);
 
             return CreatedAtAction("GetClient", new { id = client.Id }, client);
         }
 
         // DELETE: api/Clients/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteClient([FromRoute] int id)
+        public async Task<IActionResult> DeleteClient(int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var client = await _context.Clients.FindAsync(id);
+            var client = await _clientRepo.GetByIdAsync(id);
             if (client == null)
             {
                 return NotFound();
             }
 
-            _context.Clients.Remove(client);
-            await _context.SaveChangesAsync();
+            await _clientRepo.DeleteAsync(id);
 
-            return Ok(client);
+            return NoContent();
         }
 
         private bool ClientExists(int id)
         {
-            return _context.Clients.Any(e => e.Id == id);
+            return _clientRepo.Exists(id);
         }
     }
 }

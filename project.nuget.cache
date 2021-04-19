@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NKKeZ6YBUeW34f4JQHx+jtKxbBe3d/caZfHzgGjRmzhk7VcVrNo5err37BlVzCnCvmfV4dtLUNfmjfjq48DhCA==",
+  "dgSpecHash": "ccRYaRwb+lZcAZ32MX+xx6TW01kzTXjXq8NVscMHDVWRZxrOw9t4sSzY5+E5OrHOO3lb+ElH11Vpt13/2ruFVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SKH\\Desktop\\WAD PORTFOLIO\\CarRental\\CarRental\\CarRental.csproj",
+  "projectFilePath": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental\\CarRental.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SKH\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\SKH\\.nuget\\packages\\microsoft.aspnetcore\\2.1.7\\microsoft.aspnetcore.2.1.7.nupkg.sha512",
@@ -182,7 +182,7 @@
     "C:\\Users\\SKH\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\2.1.10\\microsoft.visualstudio.web.codegenerators.mvc.2.1.10.nupkg.sha512",
     "C:\\Users\\SKH\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\SKH\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\SKH\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\SKH\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\SKH\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "C:\\Users\\SKH\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\SKH\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",

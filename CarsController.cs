@@ -7,65 +7,53 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CarRental.DAL;
 using CarRental.DAL.DBO;
+using CarRental.DAL.Repositories;
 
-namespace CarRental.Controllers
+namespace CarRental.Controllers //SRP and DRY applied for API Cars controller//
 {
     [Route("api/[controller]")]
     [ApiController]
     public class CarsController : ControllerBase
     {
-        private readonly CarRentalDbContext _context;
+        private readonly IRepository<Car> _carRepo;
 
-        public CarsController(CarRentalDbContext context)
+        public CarsController(IRepository<Car> carRepo)
         {
-            _context = context;
+            _carRepo = carRepo;
         }
 
         // GET: api/Cars
         [HttpGet]
-        public IEnumerable<Car> GetCars()
+        public async Task<ActionResult<IEnumerable<Car>>> GetCars()
         {
-            return _context.Cars;
+            return await _carRepo.GetAllAsync();
         }
 
         // GET: api/Cars/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetCar([FromRoute] int id)
+        public async Task<ActionResult<Car>> GetCar(int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var car = await _context.Cars.FindAsync(id);
+            var car = await _carRepo.GetByIdAsync(id);
 
             if (car == null)
             {
                 return NotFound();
             }
-
-            return Ok(car);
+            return car;
         }
 
         // PUT: api/Cars/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCar([FromRoute] int id, [FromBody] Car car)
+        public async Task<IActionResult> PutCar(int id, Car car)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != car.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(car).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                await _carRepo.UpdateAsync(car);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -84,43 +72,37 @@ namespace CarRental.Controllers
 
         // POST: api/Cars
         [HttpPost]
-        public async Task<IActionResult> PostCar([FromBody] Car car)
+        public async Task<ActionResult> PostCar(Car car)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.Cars.Add(car);
-            await _context.SaveChangesAsync();
-
+            await _carRepo.CreateAsync(car);
+            
             return CreatedAtAction("GetCar", new { id = car.Id }, car);
         }
 
         // DELETE: api/Cars/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCar([FromRoute] int id)
+        public async Task<IActionResult> DeleteCar(int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var car = await _context.Cars.FindAsync(id);
+           
+            var car = await _carRepo.GetByIdAsync(id);
             if (car == null)
             {
                 return NotFound();
             }
 
-            _context.Cars.Remove(car);
-            await _context.SaveChangesAsync();
-
-            return Ok(car);
+            await _carRepo.DeleteAsync(id);
+            
+            return NoContent();
         }
 
         private bool CarExists(int id)
         {
-            return _context.Cars.Any(e => e.Id == id);
+            return _carRepo.Exists(id);
         }
     }
 }

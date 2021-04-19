@@ -1,0 +1,15 @@
+﻿<a href="#!/addCar">Create a new car</a> 
+<table class="table">
+    <tbody>
+        <tr ng-repeat="car in cars">
+            <td> {{car.type}} </td>
+            <td> {{car.name}} </td>
+            <td>
+                <a href="#!/editCar/{{car.id}}">Edit</a>
+            </td>
+            <td>
+                <a ng-click="Delete(car)">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

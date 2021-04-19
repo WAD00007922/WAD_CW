@@ -1,0 +1,35 @@
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.deps.json
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfoInputs.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfo.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csproj.CoreCompileInputs.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.pdb
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.deps.json
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csprojAssemblyReference.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfoInputs.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfo.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csproj.CoreCompileInputs.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.dll
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.pdb
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.deps.json
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csprojAssemblyReference.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfoInputs.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfo.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csproj.CoreCompileInputs.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.dll
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.deps.json
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfoInputs.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.AssemblyInfo.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csproj.CoreCompileInputs.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.dll
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental.DAL\obj\Debug\netcoreapp2.1\CarRental.DAL.csprojAssemblyReference.cache

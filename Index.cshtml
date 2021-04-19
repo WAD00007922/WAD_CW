@@ -3,61 +3,114 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Car List</h2>
-
-<div id="carsContainer" ng-app="carsApp">
-    <div ng-controller="carsController">
-        <table class="table">
-            <tbody>
-                <tr ng-repeat="car in cars">
-                    <td> {{car.id}} </td>
-                    <td> {{car.type}} </td>
-                    <td> {{car.name}} </td>
-                    <td> <input type="button" value="x" class="btn-danger" ng-click="delete(car)" />
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td></td>
-                    <td> <input ng-model="type" placeholder="Type" type="text" /> </td>
-                    <td><input ng-model="name" placeholder="Name" type="text" /></td>
-                    <td><input class="btn-primary" value="+" type="button" ng-click="add()" /></td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+<div ng-app="CarRental">
+    <div ng-view></div>
 </div>
 
-@section Scripts {
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    angular
+        .module('CarRental', ['ngRoute'])
+        .config(function ($routeProvider) {
+            $routeProvider                            //Routing//
+                .when('/',
+                {
+                    templateUrl: 'pages/index.html',
+                    controller: 'IndexController'
+                })
+                .when('/clients',
+                {
+                    templateUrl: 'pages/clients.html',
+                    controller: 'ClientsController'
+                })
+                .when('/cars',
+                {
+                    templateUrl: 'pages/cars.html',
+                    controller: 'CarsController'
+                })
+                .when('/addCar',
+                {
+                    templateUrl: 'pages/addEditCar.html',
+                    controller: 'AddCarController'
+                })
+                .when('/editCar/:carId',
+                {
+                    templateUrl: 'pages/addEditCar.html',
+                    controller: 'EditCarController'
+                })
+                .otherwise({
+                    redirectTo: '/'
+                });
+        })
+        //Setting the modules that will be used for the controllers and functions for the logic of the controllers //
+        .controller('IndexController', ['$scope', '$http', function ($scope, $http) {
+            $scope.message = 'Car Rental';
+        }])
+        .controller('ClientsController', ['$scope', '$http', function ($scope, $http) {
+            $scope.clients = [];
+            $http.get('@Url.Action("GetClients", "Clients")')
+                .then(function (response) {          //Get request for the method//
+                    $scope.clients = response.data;
+                });
+        }])
+        .controller('CarsController', ['$scope', '$http', function ($scope, $http) {
+            $scope.cars = [];
+            $http.get('@Url.Action("GetCars", "Cars")')
+                .then(function (response) {          //Get request for the method//
+                    $scope.cars = response.data;
+                });
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"></script>
-    <script>
-        angular.module('carsApp', [])
-        .controller('carsController', function ($scope, $http) {
-                $http.get("@Url.Action("GetCars", "Cars")").then(function (response) {
-                    $scope.cars = response.data; });
-                $scope.add = function () {
-                    var car = {
-                        type: $scope.type,
-                        name: $scope.name
-                    };
+            $scope.Delete = function (car) {
+                $http.delete("@Url.Action("GetCars", "Cars")/" + car.id).then(function (response){
+                    var index = $scope.cars.indexOf(car);
+                    $scope.cars.splice(index, 1);
+                });
+            }
+        }])
+        .controller('AddCarController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+            $scope.car =
+            {
+                id : 0,
+                type : '',
+                name : ''
 
-                    $http.post("@Url.Action("PostCar", "Cars")", car).then(function (response) {
-                        $scope.cars.push(response.data);
+            };
+
+            $scope.SaveCar = function()
+            {
+                $http.post('@Url.Action("PostCar", "Cars")', $scope.car)
+                    .then(function (response) {
+                        $location.path('/cars');
+                    })
+            }
+
+        }])
+        .controller('EditCarController', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
+            $scope.car =
+            {
+                id : 0,
+                type : '',
+                name : ''
+
+            };
+
+            $http.get('@Url.Action("GetCars", "Cars")/' + $routeParams.carId)
+                .then(function (response) {          
+                    $scope.car = response.data;
+                });
+
+            $scope.SaveCar = function()
+            {
+                $http.put('@Url.Action("GetCars", "Cars")/' + $routeParams.carId, $scope.car)
+                    .then(function (response) {
+                        $location.path('/cars');
                     });
+            }
 
-                    $scope.type = '';
-                    $scope.name = '';
-                }
-                $scope.delete = function (car) {
-                    $http.delete("@Url.Action("PostCar", "Cars")/" + car.id).then(function (response) {
-                        var index = $scope.cars.indexOf(car);
-                        $scope.cars.splice(index, 1);
-                    });
-                }
-            });
-    </script>
-}
+        }]);
+
+
+</script>
 
 
