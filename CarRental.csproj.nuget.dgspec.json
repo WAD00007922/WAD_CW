@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental\\CarRental.csproj": {}
+  },
+  "projects": {
+    "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental.DAL\\CarRental.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental.DAL\\CarRental.DAL.csproj",
+        "projectName": "CarRental.DAL",
+        "projectPath": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental.DAL\\CarRental.DAL.csproj",
+        "packagesPath": "C:\\Users\\SKH\\.nuget\\packages\\",
+        "outputPath": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SKH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental\\CarRental.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental\\CarRental.csproj",
+        "projectName": "CarRental",
+        "projectPath": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental\\CarRental.csproj",
+        "packagesPath": "C:\\Users\\SKH\\.nuget\\packages\\",
+        "outputPath": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SKH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental.DAL\\CarRental.DAL.csproj": {
+                "projectPath": "D:\\WADEngpaslednesh\\WAD.WebApplication.7922\\CarRental.7922\\CarRental.DAL\\CarRental.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.BrowserLink": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

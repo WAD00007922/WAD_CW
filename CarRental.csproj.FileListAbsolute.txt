@@ -1,0 +1,150 @@
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.deps.json
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.json
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.dev.json
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.pdb
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.pdb
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csprojAssemblyReference.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfoInputs.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfo.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CoreCompileInputs.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.input.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.output.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorCoreGenerate.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Cars\Create.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Cars\Delete.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Cars\Details.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Cars\Edit.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Cars\Index.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Create.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Delete.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Details.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Edit.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Clients\Index.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.Views.pdb
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CopyComplete
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.dll
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.pdb
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.genruntimeconfig.cache
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\SKH\Desktop\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\ClientMVC\Index.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\appsettings.json
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.deps.json
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.json
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.dev.json
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.dll
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.pdb
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.dll
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.pdb
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csprojAssemblyReference.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfoInputs.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfo.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CoreCompileInputs.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.input.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.output.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorCoreGenerate.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\ClientMVC\Index.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cache
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cs
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.Views.pdb
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CopyComplete
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.dll
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.pdb
+E:\Users\00007922\Downloads\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.genruntimeconfig.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\appsettings.json
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.deps.json
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.json
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.dev.json
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.dll
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.pdb
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.dll
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.pdb
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csprojAssemblyReference.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfoInputs.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfo.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CoreCompileInputs.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.input.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.output.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorCoreGenerate.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\ClientMVC\Index.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cache
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cs
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.Views.pdb
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CopyComplete
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.dll
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.pdb
+D:\WADEngpaslednesh\WAD PORTFOLIO\WAD PORTFOLIO\CarRental\CarRental\obj\Debug\netcoreapp2.1\CarRental.genruntimeconfig.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\appsettings.json
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.deps.json
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.json
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.runtimeconfig.dev.json
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.dll
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.dll
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.Views.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.dll
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\bin\Debug\netcoreapp2.1\CarRental.DAL.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfoInputs.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.AssemblyInfo.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CoreCompileInputs.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorAssemblyInfo.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.input.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.TagHelpers.output.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorCoreGenerate.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.RazorTargetAssemblyInfo.cs
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.Views.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.csproj.CopyComplete
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.dll
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.pdb
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.genruntimeconfig.cache
+D:\WADEngpaslednesh\WAD.WebApplication.7922\CarRental.7922\CarRental\obj\Debug\netcoreapp2.1\CarRental.csprojAssemblyReference.cache

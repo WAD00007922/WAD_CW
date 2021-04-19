@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div ng-app="CarRental">
+    <div ng-view></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    angular
+        .module('CarRental', ['ngRoute'])
+        .config(function ($routeProvider) {
+            $routeProvider                            //Routing//
+                .when('/',
+                {
+                    templateUrl: 'pages/index.html',
+                    controller: 'IndexController'
+                })
+                .when('/clients',
+                {
+                    templateUrl: 'pages/clients.html',
+                    controller: 'ClientsController'
+                })
+                .when('/cars',
+                {
+                    templateUrl: 'pages/cars.html',
+                    controller: 'CarsController'
+                })
+                .otherwise({
+                    redirectTo: '/'
+                });
+        })
+        //Setting the modules that will be used for the controllers and functions for the logic of the controllers //
+        .controller('IndexController', ['$scope', '$http', function ($scope, $http) {
+            $scope.message = 'Car Rental';
+        }])
+        .controller('ClientsController', ['$scope', '$http', function ($scope, $http) {
+            $scope.clients = [];
+            $http.get('@Url.Action("GetClients", "Clients")')
+                .then(function (response) {          //Get request for the method//
+                    $scope.clients = response.data;
+                });
+        }])
+        .controller('CarsController', ['$scope', '$http', function ($scope, $http) {
+            $scope.cars = [];
+            $http.get('@Url.Action("GetCars", "Cars")')
+                .then(function (response) {          //Get request for the method//
+                    $scope.cars = response.data;
+                });
+        }]);
+
+
+</script>
+
+
